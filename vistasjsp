@@ -1,0 +1,51 @@
+<!-- deposit.jsp -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Depositar fondos</title>
+</head>
+<body>
+    <h2>Depositar fondos</h2>
+    <form action="walletController" method="post">
+        Monto a depositar: <input type="text" name="amount"><br>
+        <input type="hidden" name="action" value="deposit">
+        <input type="submit" value="Depositar">
+    </form>
+</body>
+</html>
+
+<!-- withdraw.jsp -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retirar fondos</title>
+</head>
+<body>
+    <h2>Retirar fondos</h2>
+    <form action="walletController" method="post">
+        Monto a retirar: <input type="text" name="amount"><br>
+        <input type="hidden" name="action" value="withdraw">
+        <input type="submit" value="Retirar">
+    </form>
+</body>
+</html>
+
+<!-- transfer.jsp -->
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transferir fondos</title>
+</head>
+<body>
+    <h2>Transferir fondos</h2>
+    <form action="walletController" method="post">
+        Monto a transferir: <input type="text" name="amount"><br>
+        Destinatario: <input type="text" name="recipient"><br>
+        <input type="hidden" name="action" value="transfer">
+        <input type="submit" value="Transferir">
+    </form>
+</body>
+</html>
