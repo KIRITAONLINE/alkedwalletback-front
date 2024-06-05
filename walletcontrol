@@ -1,0 +1,23 @@
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class WalletController {
+    public void handleRequest(HttpServletRequest request, HttpServletResponse response) {
+        String action = request.getParameter("action");
+        
+        // Aquí podrías tener un switch para manejar diferentes acciones, por ejemplo:
+        switch (action) {
+            case "deposit":
+                // Lógica para manejar la solicitud de depósito
+                break;
+            case "withdraw":
+                // Lógica para manejar la solicitud de retiro
+                break;
+            case "transfer":
+                // Lógica para manejar la solicitud de transferencia
+                break;
+            default:
+                // Acción desconocida, manejar de acuerdo a tus necesidades
+        }
+    }
+}
