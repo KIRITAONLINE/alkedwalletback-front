@@ -1,0 +1,8 @@
+<servlet>
+    <servlet-name>WalletController</servlet-name>
+    <servlet-class>your.package.name.WalletController</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>WalletController</servlet-name>
+    <url-pattern>/walletController</url-pattern>
+</servlet-mapping>
